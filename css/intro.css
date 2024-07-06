@@ -1,4 +1,4 @@
-.all {
+.intro {
  display: flex;
  align-items: center;
  justify-content: center;
@@ -20,12 +20,17 @@
 }
 
 .img {
- height: 250px;
- width: 250px;
+ height: 220px;
+ width: 220px;
  border-radius: 50%;
 }
 
 @media (max-width: 768px) {
+
+    .intro {
+flex-wrap: wrap;
+flex-direction: column-reverse;
+       }
  .all {
   width: 90%;
  }

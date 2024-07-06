@@ -17,7 +17,7 @@
 .proj h2 {
  border-bottom: 1px solid white;
  width: fit-content;
- margin: auto;
+ margin:  10px auto;
  padding-bottom: 5px;
  border-radius: 5px;
 }

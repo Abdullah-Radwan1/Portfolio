@@ -11,19 +11,19 @@
   <link rel="stylesheet" type="text/css" href="css/projects.css" />
   <link rel="stylesheet" type="text/css" href="css/intro.css" />
   <link rel="stylesheet" type="text/css" href="css/global.css" />
+  <link rel="stylesheet" type="text/css" href="css/contact.css" />
  </head>
  <body>
   <!-- header start -->
-  <div>
-   <div class="header" id="header">
-    <div class="container">
-     <a href="" class="logo">Abdullah</a>
-     <ul class="main-nav">
-      <li><a href="#myprojects">Projects</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#About">About</a></li>
-     </ul>
-    </div>
+  <div class="header" id="header">
+   <div class="container">
+    <a href="" class="logo">Abdullah</a>
+    <ul class="main-nav">
+     <li><a href="#myprojects">Projects</a></li>
+     <li><a href="#Skills">Skills</a></li>
+     <li><a href="#About">About</a></li>
+     <li><a href="#Contact">contact</a></li>
+    </ul>
    </div>
   </div>
   <!-- header end -->
@@ -44,7 +44,7 @@
    will be free...
   </div>
 
-  <div class="all">
+  <div class="intro">
    <div class="title">
     <h1>Hello!... And Welcome to my portfolio</h1>
     <h2 class="prof">I am a Front End Developer</h2>
@@ -55,23 +55,11 @@
    </div>
   </div>
   <!-- about me end  -->
-  <!-- skills start -->
 
-  <h2 class="main-title">My Projects</h2>
-
-  <div id="myprojects" class="projects">
-   <div class="landing proj">
-    <h2>Advanced Landing page</h2>
-    <div class="img-parent">
-     <div class="proj-img">
-      <img src="https://i.ibb.co/xHzmSqW/landing.png" />
-     </div>
-    </div>
-
-    <a class="link" target="_blank" href="https://landing-page-0.web.app/">
-     Demo
-    </a>
-   </div>
+  <h2 id="myprojects" class="main-title">My Projects</h2>
+  <!-- projects start -->
+  <div  class="projects">
+   <!-- first project  -->
 
    <div class="pnp proj">
     <h2>Travelling App</h2>
@@ -80,18 +68,44 @@
       <img src="https://i.ibb.co/prC1gy4/pnp.png" />
      </div>
     </div>
+    <a class="link" target="_blank" href="https://travelling-app-topaz.vercel.app/"> Demo </a>
+   </div>
+
+   <!-- second project  -->
+
+   <div class="pnp proj">
+    <h2>Food Delivery App</h2>
+    <div class="img-parent">
+     <div class="proj-img">
+      <img src="/images/palestino.png" />
+     </div>
+    </div>
     <a
      class="link"
      target="_blank"
-     href="https://travelling-app-topaz.vercel.app/"
+     href="https://palestino-six.vercel.app/"
     >
      Demo
     </a>
    </div>
-  </div>
 
-  <h2 class="main-title">My Skills</h2>
-  <div id="Skills" class="skills">
+   <!-- third project  -->
+
+   <div class="landing proj">
+    <h2>Advanced Landing page</h2>
+    <div class="img-parent">
+     <div class="proj-img">
+      <img src="https://i.ibb.co/xHzmSqW/landing.png" />
+     </div>
+    </div>
+    <a class="link" target="_blank" href="https://landing-page-0.web.app/"> Demo </a>
+   </div>
+  </div>
+  <!-- projects end -->
+
+  <!-- skills start -->
+  <h2  id="Skills" class="main-title">My Skills</h2>
+  <div class="skills">
    <img class="skill black" src="images/nextjs (1).svg" />
    <img class="skill" src="https://i.ibb.co/vv0k2wR/react.png" />
    <img class="skill" src="https://i.ibb.co/cbvs4mX/ts.png" />
@@ -107,14 +121,28 @@
    <img class="skill" src="https://i.ibb.co/k5qgV5d/html.png" />
   </div>
   <!-- skills end  -->
-  <h2 class="main-title">About me</h2>
-  <div id="About" class="aboutme">
+  <h2 id="About" class="main-title">About me</h2>
+  <!-- aboutme start -->
+  <div  class="aboutme">
    <h2>
-    I'm a 21-year-old living in Cairo with extensive experience in various
-    projects. I have strong knowledge of JavaScript and React, as well as Redux
-    and Next.js. I'm currently studying Quality Management at Ain Shams
-    University (2021-2025). I speak Arabic, English, German, and French.
+    I'm a 21-year-old living in Cairo with extensive experience in various projects. I have strong
+    knowledge of JavaScript and React, as well as Redux and Next.js. I'm currently studying Quality
+    Management at Ain Shams University (2021-2025). I speak Arabic, English, German, and French.
    </h2>
+  </div>
+  <!-- aboutme end -->
+  <h2  id="Contact" class="main-title">Contact</h2>
+
+  <div class="contact">
+   <div class="container">
+    <a target="_blank" href="https://www.linkedin.com/in/abd-allah-radwan-280140284/"
+     ><img src="/images/linkid.png" alt=""
+    /></a>
+    <a target="_blank" href="  https://github.com/badabeedo"
+     ><img src="/images/gitcontained.png" alt=""
+    /></a>
+    <a download href="/cv.pdf "><img src="/images/CV.png" alt="" /></a>
+   </div>
   </div>
  </body>
 </html>
