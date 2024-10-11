@@ -2,24 +2,34 @@ import { NextRequest, NextResponse } from "next/server";
 import { EmailTemplate } from "@/components/email-template";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.API_KEY);
+console.log(process.env.API_KEY);
 
 export async function POST(req: NextRequest) {
  try {
-  // Assuming the request body contains the necessary data
+  // Parse the JSON body of the request
+  const requestBody = await req.json();
+  console.log("Request Body:", requestBody); // Log the request body
+
+  // Extract necessary data from the request body
+  const { subject, to } = requestBody; // Assuming your body contains `firstName` and `to`
+
+  // Send email using the extracted data
   const { data, error } = await resend.emails.send({
    from: "Acme <onboarding@resend.dev>",
-   to: ["delivered@resend.dev"],
-   subject: "Hello world",
-   react: EmailTemplate({ firstName: "John" }),
+   to: to || ["abdallahbeedo855@gmail.com"], // Use provided recipient or fallback
+   subject: requestBody.subject,
+   react: EmailTemplate({ subject }), // Use firstName from the request body
   });
 
   if (error) {
    return NextResponse.json(error, { status: 400 });
   }
-  console.log(data);
+
+  console.log("Email Sent Data:", data); // Log the response data
   return NextResponse.json(data, { status: 200 });
  } catch (err) {
+  console.error("Error:", err); // Log the error for debugging
   return NextResponse.json({ error: "Something went wrong" }, { status: 500 });
  }
 }
