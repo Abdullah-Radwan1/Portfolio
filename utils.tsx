@@ -7,7 +7,8 @@ export const projectsData = [
   image: "/images/projects/1.png",
   tag: ["All", "Web"],
   gitUrl: "/",
-  previewUrl: "/",
+  previewUrl:
+   "https://mostaql.com/project/954707-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-nextjs",
  },
  {
   id: 2,
@@ -57,18 +58,19 @@ export const TAB_DATA = [
   title: "Skills",
   id: "skills",
   content: (
-   <div className="flex gap-4 ">
-    <ul className="list-disc pl-3">
+   <div className="flex gap-8 pl-5">
+    <ul className="list-disc ">
      <li>Next.js</li>
      <li>React</li>
      <li>Express</li>
      <li>MongoDB</li>
      <li>TypeScript</li>
-     <li>Redux Toolkit</li>
-     <li>Zustand</li>
+     <li>RTK</li>
+     <li>RTK Query</li>
     </ul>
 
-    <ul className="list-disc">
+    <ul className="list-disc ">
+     <li>Zustand</li>
      <li>C++</li>
      <li>Git & GitHub</li>
      <li>Tailwind CSS</li>

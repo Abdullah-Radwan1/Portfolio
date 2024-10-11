@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import { navLinks } from "@/types";
+import { ChevronDown, ChevronLeft, ChevronRight, ChevronUp, Menu } from "lucide-react";
 const Navbar = () => {
  const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -19,14 +20,14 @@ const Navbar = () => {
        onClick={() => setNavbarOpen(true)}
        className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
       >
-       icon
+       <ChevronUp />
       </button>
      ) : (
       <button
        onClick={() => setNavbarOpen(false)}
        className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
       >
-       icon
+       <ChevronDown />
       </button>
      )}
     </div>

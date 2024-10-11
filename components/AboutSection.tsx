@@ -42,7 +42,7 @@ const AboutSection = () => {
        Certifications{" "}
       </TabButton>
 
-      <div className="mt-8"></div>
+      <div className="mt-4 "></div>
 
       {
        //@ts-ignore
