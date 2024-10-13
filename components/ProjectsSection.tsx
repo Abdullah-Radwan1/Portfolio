@@ -1,11 +1,10 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 import { projectsData } from "@/utils";
 
 const ProjectsSection = () => {
- const [tag, setTag] = useState("All");
  const ref = useRef(null);
  const isInView = useInView(ref, { once: true });
 
@@ -17,7 +16,7 @@ const ProjectsSection = () => {
  return (
   <section id="projects">
    <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">My Projects</h2>
-   <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+   <ul ref={ref} className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12">
     {projectsData.map((project, index) => (
      <motion.li
       key={index}
