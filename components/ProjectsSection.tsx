@@ -15,7 +15,9 @@ const ProjectsSection = () => {
 
  return (
   <section id="projects">
-   <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">My Projects</h2>
+   <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    My Projects
+   </h2>
    <ul ref={ref} className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12">
     {projectsData.map((project, index) => (
      <motion.li
@@ -32,7 +34,8 @@ const ProjectsSection = () => {
        imgUrl={project.image}
        gitUrl={project.gitUrl}
        previewUrl={project.previewUrl}
-       showGithubIcon={index !== 0} // Hide GitHub icon for the first project
+       showGithubIcon={index !== 0}
+       showPreviewcon={index !== 1}
       />
      </motion.li>
     ))}

@@ -1,9 +1,11 @@
+import { EyeIcon, Paperclip } from "lucide-react";
+import Link from "next/link";
 export const projectsData = [
  {
   id: 1,
   title: "Be online ( Freelancing @mostaql )",
   description:
-   "E-Commerce app with 2 platforms: Customer Website for browsing and purchasing, Supplier Portal for managing orders and product listings.",
+   "E-Commerce app with 2 platforms developed by NEXT.JS: Customer Website for browsing and purchasing, Supplier Portal for managing orders and product listings.",
   image: "/images/projects/1.png",
   tag: ["All", "Web"],
   gitUrl: "/",
@@ -12,6 +14,16 @@ export const projectsData = [
  },
  {
   id: 2,
+  title: "Graphql Transaction App",
+  description:
+   "Developed using Next.js and GraphQL to fetch, create, update and delete transac-tion records. Implemented secure authentication with GraphQL-Passport",
+  image: "/images/projects/4.png",
+  tag: ["All", "Web"],
+  gitUrl: "https://github.com/Abdullah-Radwan1/graphQl-project",
+  previewUrl: "https://back-end-dashboard-front.vercel.app/",
+ },
+ {
+  id: 3,
   title: "MERN Dashboard ",
   description:
    "connecting Next.js application to MongoDB, implementing sorting and filtering using express , visualizing data through interactive charts for enhanced insights.",
@@ -21,7 +33,7 @@ export const projectsData = [
   previewUrl: "https://back-end-dashboard-front.vercel.app/",
  },
  {
-  id: 3,
+  id: 4,
   title: "Admin Dashboard",
   description:
    "admin panel for an E-commerce business serves as a central hub for managing transactions and team members.",
@@ -31,16 +43,6 @@ export const projectsData = [
   previewUrl: "https://admin-dashboard-84ee4.web.app/",
  },
 
- {
-  id: 4,
-  title: "Auth system",
-  description:
-   "Developed an authentication system using MongoDB and Express, implementing login, signup, and password reset features, while utilizing JWT and cookies for secure verification and authentication.",
-  image: "/images/projects/5.png",
-  tag: ["All", "Web"],
-  gitUrl: "https://github.com/Abdullah-Radwan1/Auth-system",
-  previewUrl: "https://auth-system-taupe.vercel.app/login",
- },
  {
   id: 5,
   title: "Food App",
@@ -62,21 +64,23 @@ export const TAB_DATA = [
     <ul className="list-disc ">
      <li>Next.js</li>
      <li>React</li>
-     <li>Express</li>
-     <li>MongoDB</li>
+     <li>prisma</li>
      <li>TypeScript</li>
-     <li>RTK</li>
-     <li>RTK Query</li>
+     <li>zod</li>
+     <li>redux toolkit</li>
+     <li>react query</li>
+     <li>Zustand</li>
     </ul>
 
     <ul className="list-disc ">
-     <li>Zustand</li>
-     <li>C++</li>
-     <li>Git & GitHub</li>
      <li>Tailwind CSS</li>
      <li>Material UI</li>
-     <li>Testing Library & Jest (Basics)</li>
      <li>SASS</li>
+     <li>Express</li>
+     <li>MongoDB</li>
+     <li> Mysql</li>
+     <li>Git & GitHub</li>
+     <li>C++</li>
     </ul>
    </div>
   ),
@@ -86,7 +90,9 @@ export const TAB_DATA = [
   id: "education",
   content: (
    <ul className="list-disc pl-3">
-    <li>Bachelor in Quality Management Ain Shams University ( Oct 2021 – Dec 2025 )</li>
+    <li>
+     Bachelor in Quality Management Ain Shams University ( Oct 2021 – Dec 2025 )
+    </li>
    </ul>
   ),
  },
@@ -94,8 +100,14 @@ export const TAB_DATA = [
   title: "Certifications",
   id: "certifications",
   content: (
-   <ul className="list-disc  pl-3">
+   <ul className="list-disc  pl-3 flex gap-4 items-center">
     <li>The complete 2022 JavaScript Course With Projects (Udemy).</li>
+    <Link
+     target="_blank"
+     href="https://www.udemy.com/certificate/UC-6142d7a6-cc65-4874-a370-b78f694a00f3/"
+    >
+     <Paperclip color="green" />{" "}
+    </Link>
    </ul>
   ),
  },
