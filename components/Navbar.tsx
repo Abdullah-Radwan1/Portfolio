@@ -19,7 +19,7 @@ const Navbar = () => {
   // Effect to handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 10) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -37,13 +37,13 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed mx-auto top-0 left-0 right-0 z-10 transition-colors duration-300 ${
+      className={` z-10 transition-colors duration-300 ${
         isScrolled
           ? "bg-background/90 backdrop-blur-sm border-b"
           : "bg-transparent"
       }`}
     >
-      <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
+      <div className="flex  lg:py-4 flex-wrap items-center justify-evenly mx-auto px-4 py-2">
         {/* Logo */}
         <Link
           href={"/"}

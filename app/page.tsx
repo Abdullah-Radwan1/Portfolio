@@ -1,5 +1,6 @@
 import AboutSection from "@/components/AboutSection";
 import EmailSection from "@/components/EmailSection";
+import ExperienceSection from "@/components/Experience";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
@@ -8,9 +9,10 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <div className="container  pb-2 px-8 pt-24 mx-auto ">
+      <div className="container mx-auto p-4 ">
         <HeroSection />
         <AboutSection />
+        <ExperienceSection />
         <ProjectsSection />
         <EmailSection />
       </div>

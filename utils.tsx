@@ -1,38 +1,28 @@
-import { EyeIcon, Paperclip } from "lucide-react";
-import image from "next/image";
+import { Paperclip } from "lucide-react";
 import Link from "next/link";
-import { title } from "process";
+export const Experience = {
+  id: 1,
+  title: "Freelancing @mostaql",
+  description:
+    "E-Commerce app with two platforms: Customer Website for browsing and purchasing, and Supplier Portal for managing orders and product listings. Built with NEXT.JS.",
+  image: "/images/projects/1.png",
+  gitUrl: "/",
+  previewUrl:
+    "https://mostaql.com/project/954707-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-nextjs",
+};
+
 export const projectsData = [
   {
     id: 1,
-    title: "Be online (Freelancing @mostaql)",
+    title: "Fullstack Ecommerce",
     description:
-      "E-Commerce app with two platforms: Customer Website for browsing and purchasing, and Supplier Portal for managing orders and product listings. Built with NEXT.JS.",
-    image: "/images/projects/1.png",
+      "E-Commerce app built with Next.js and neon PostgreSQL. Features include Stripe payments, NextAuth and Prisma .",
+    image: "/images/projects/vogue.png",
     gitUrl: "/",
-    previewUrl:
-      "https://mostaql.com/project/954707-%D8%A5%D9%86%D8%B4%D8%A7%D8%A1-%D9%85%D9%88%D9%82%D8%B9-%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-nextjs",
+    previewUrl: "https://fullstack-ecommerce-flax.vercel.app/ar",
   },
   {
     id: 2,
-    title: "Fullstack Ecommerce",
-    description:
-      "E-Commerce platform built with Next.js and Supabase PostgreSQL. Features include Stripe payments, NextAuth authentication, and Prisma ORM.",
-    image: "/images/projects/2.png",
-    gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
-    previewUrl: "https://back-end-dashboard-front.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "MERN Dashboard",
-    description:
-      "Next.js app connected to MongoDB. Features include sorting, filtering with Express, and data visualization through interactive charts.",
-    image: "/images/projects/2.png",
-    gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
-    previewUrl: "https://back-end-dashboard-front.vercel.app/",
-  },
-  {
-    id: 4,
     title: "Admin Dashboard",
     description:
       "Admin panel for E-commerce businesses. Central hub for managing transactions, team members, and product listings.",
@@ -41,22 +31,31 @@ export const projectsData = [
     previewUrl: "https://admin-dashboard-84ee4.web.app/",
   },
   {
-    id: 5,
+    id: 3,
     title: "Food App",
     description:
       "Food ordering app built with Next.js. Features include Redux Toolkit for state management and a user-friendly interface.",
-    image: "/images/projects/6.png",
+    image: "/images/projects/5.png",
     gitUrl: "https://palestino-six.vercel.app/",
     previewUrl: "https://palestino-six.vercel.app/",
   },
   {
-    id: 6,
+    id: 4,
+    title: "MERN Dashboard",
+    description:
+      "Next.js app connected to MongoDB. include sorting, filtering with Express, and data visualization through interactive charts.",
+    image: "/images/projects/2.png",
+    gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
+    previewUrl: "https://back-end-dashboard-front.vercel.app/",
+  },
+
+  {
+    id: 5,
     title: "GraphQL Transaction App",
     description:
       "CRUD app built with Next.js and GraphQL. includes  authentication with GraphQL-Passport.",
     image: "/images/projects/4.png",
     gitUrl: "https://github.com/Abdullah-Radwan1/graphQl-project",
-    previewUrl: "https://back-end-dashboard-front.vercel.app/",
   },
 ];
 
@@ -75,17 +74,19 @@ export const TAB_DATA = [
           <li>redux toolkit</li>
           <li>react query</li>
           <li>Zustand</li>
+          <li>postman</li>
         </ul>
 
         <ul className="list-disc ">
-          <li>Tailwind CSS</li>
-          <li>Material UI</li>
-          <li>SASS</li>
+          <li>Node.js</li>
           <li>Express</li>
           <li>MongoDB</li>
           <li> Mysql</li>
+          <li>PostgreSQL</li>
+          <li> graphQl</li>
+          <li>laravel</li>
           <li>Git & GitHub</li>
-          <li>C++</li>
+          <li>Tailwind CSS</li>
         </ul>
       </div>
     ),
