@@ -4,8 +4,6 @@ import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 import { projectsData } from "@/utils";
 
-import Experience from "./Experience";
-
 const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -17,11 +15,10 @@ const ProjectsSection = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold  my-6">My Projects</h2>
-      <ul
-        ref={ref}
-        className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 md:gap-12"
-      >
+      <h2 className="text-center text-5xl font-bold  bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent   my-6">
+        My Projects
+      </h2>
+      <ul ref={ref} className="grid xl:grid-cols-2  gap-8 md:gap-12">
         {projectsData.map((project, index) => (
           <motion.li
             key={index}

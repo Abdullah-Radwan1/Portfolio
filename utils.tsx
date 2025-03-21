@@ -23,12 +23,12 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Admin Dashboard",
+    title: "MERN Dashboard",
     description:
-      "Admin panel for E-commerce businesses. Central hub for managing transactions, team members, and product listings.",
-    image: "/images/projects/3.png",
-    gitUrl: "https://github.com/Abdullah-Radwan1/Admin-Dashboard",
-    previewUrl: "https://admin-dashboard-84ee4.web.app/",
+      "Next.js app connected to MongoDB. include sorting, filtering with Express, and data visualization through interactive charts.",
+    image: "/images/projects/2.png",
+    gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
+    previewUrl: "https://back-end-dashboard-front.vercel.app/",
   },
   {
     id: 3,
@@ -41,12 +41,12 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "MERN Dashboard",
+    title: "Admin Dashboard",
     description:
-      "Next.js app connected to MongoDB. include sorting, filtering with Express, and data visualization through interactive charts.",
-    image: "/images/projects/2.png",
-    gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
-    previewUrl: "https://back-end-dashboard-front.vercel.app/",
+      "Admin panel for E-commerce businesses. Central hub for managing transactions, team members, and product listings.",
+    image: "/images/projects/3.png",
+    gitUrl: "https://github.com/Abdullah-Radwan1/Admin-Dashboard",
+    previewUrl: "https://admin-dashboard-84ee4.web.app/",
   },
 
   {

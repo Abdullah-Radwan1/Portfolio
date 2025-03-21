@@ -6,7 +6,9 @@ import { LinkIcon } from "lucide-react";
 const ExperienceSection = () => {
   return (
     <>
-      <h2 className="text-center text-4xl my-6 font-bold  ">Experience</h2>
+      <h2 className="text-center text-5xl my-6 font-bold  bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+        Experience
+      </h2>
       <section className=" border p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
         <div className="flex flex-col md:flex-row items-center gap-6">
           {/* Image */}

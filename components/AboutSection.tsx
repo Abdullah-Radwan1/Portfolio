@@ -19,7 +19,9 @@ const AboutSection = () => {
       <div className="md:grid md:grid-cols-2 gap-8 items-center my-8 xl:gap-16  ">
         <Image alt="about me" src="/images/971.jpg" width={900} height={900} />
         <div className="mt-4 md:mt-0 text-left flex !flex-col h-full">
-          <h2 className="text-4xl font-bold  mb-4">About Me</h2>
+          <h2 className="text-5xl my-6 font-bold  bg-gradient-to-r from-blue-500 to-green-600 bg-clip-text text-transparent  mb-4">
+            About Me
+          </h2>
           <p className="text-base lg:text-lg">
             A continuously self-improving Front End developer with +2 years of
             experience, skilled in a wide range of technologies, including

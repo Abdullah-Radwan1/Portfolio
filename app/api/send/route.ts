@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     // Send email using the extracted data
     const { data, error } = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>",
+      from: "portfolio <onboarding@resend.dev>",
       to: ["abdallahbeedo855@gmail.com"], // Use provided recipient or fallback
       subject: requestBody.subject,
       react: EmailTemplate({ subject, message }),

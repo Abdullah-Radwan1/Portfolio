@@ -52,7 +52,9 @@ const EmailSection = () => {
       className="grid md:grid-cols-2 my-12 py-24 gap-4 relative"
     >
       <div className="z-10">
-        <h5 className="text-xl font-bold  my-2">Let&apos;s Connect</h5>
+        <h5 className="text-2xl  font-bold  bg-gradient-to-r from-green-500 to-green-200 bg-clip-text text-transparent my-2">
+          Let&apos;s Connect
+        </h5>
         <p className=" mb-4 max-w-md">
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
