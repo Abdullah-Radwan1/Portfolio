@@ -22,12 +22,13 @@ const ProjectCard = ({
 }) => {
   return (
     <>
-      <div className="h-96 w-full  rounded-t-xl relative group">
+      <div className="w-full  rounded-t-xl relative group">
         <Image
           src={imgUrl}
           alt={title}
-          fill
-          className="object-cover rounded-t-xl"
+          width={1000}
+          height={1000}
+          className="object-fill rounded-t-xl"
         />
         <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
           {showGithubIcon && ( // Conditional rendering for the GitHub icon

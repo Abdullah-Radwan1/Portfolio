@@ -26,16 +26,16 @@ export const projectsData = [
     title: "MERN Dashboard",
     description:
       "Next.js app connected to MongoDB. include sorting, filtering with Express, and data visualization through interactive charts.",
-    image: "/images/projects/2.png",
+    image: "/images/projects/3.jpg",
     gitUrl: "https://github.com/Abdullah-Radwan1/Back-End-Dashboard",
     previewUrl: "https://back-end-dashboard-front.vercel.app/",
   },
   {
     id: 3,
-    title: "Food App",
+    title: "Palesteeno Food App",
     description:
       "Food ordering app built with Next.js. Features include Redux Toolkit for state management and a user-friendly interface.",
-    image: "/images/projects/5.png",
+    image: "/images/projects/2.jpg",
     gitUrl: "https://palestino-six.vercel.app/",
     previewUrl: "https://palestino-six.vercel.app/",
   },
