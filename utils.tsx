@@ -23,6 +23,15 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: "Meetup Events",
+    description:
+      "Developedascalable event platform with Next.js and Supabase, featuring OAuth (NextAuth),real-timedatasync(Prisma),andresponsiveUI(RadixUI/TailwindCSS)",
+    image: "/images/projects/4.jpg",
+    previewUrl: "https://alreeb-task.vercel.app/en/auth/signin",
+    gitUrl: "https://github.com/Abdullah-Radwan1/graphQl-project",
+  },
+  {
+    id: 3,
     title: "MERN Dashboard",
     description:
       "Next.js app connected to MongoDB. include sorting, filtering with Express, and data visualization through interactive charts.",
@@ -31,7 +40,7 @@ export const projectsData = [
     previewUrl: "https://back-end-dashboard-front.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Palesteeno Food App",
     description:
       "Food ordering app built with Next.js. Features include Redux Toolkit for state management and a user-friendly interface.",
@@ -40,22 +49,13 @@ export const projectsData = [
     previewUrl: "https://palestino-six.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Admin Dashboard",
     description:
       "Admin panel for E-commerce businesses. Central hub for managing transactions, team members, and product listings.",
     image: "/images/projects/3.png",
     gitUrl: "https://github.com/Abdullah-Radwan1/Admin-Dashboard",
     previewUrl: "https://admin-dashboard-84ee4.web.app/",
-  },
-
-  {
-    id: 5,
-    title: "GraphQL Transaction App",
-    description:
-      "CRUD app built with Next.js and GraphQL. includes  authentication with GraphQL-Passport.",
-    image: "/images/projects/4.png",
-    gitUrl: "https://github.com/Abdullah-Radwan1/graphQl-project",
   },
 ];
 

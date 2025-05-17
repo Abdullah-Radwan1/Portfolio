@@ -34,8 +34,7 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
-              showGithubIcon={index !== 0}
-              showPreviewcon={index !== 4}
+              showGithubIcon={index !== 0 && index !== 4} // Show GitHub icon for the first and third projects
             />
           </motion.li>
         ))}
